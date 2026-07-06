@@ -5,21 +5,6 @@
  * Generate human-readable markdown from JSON Schema definitions.
  */
 
-// ── Canonical key ordering for object schemas ────────────────────────────────
-const FIELD_ORDER = [
-  'type', 'format', 'title', 'description', 'default',
-  'enum', 'const', 'examples',
-  'minimum', 'maximum', 'exclusiveMinimum', 'exclusiveMaximum',
-  'minLength', 'maxLength', 'pattern',
-  'minItems', 'maxItems', 'uniqueItems',
-  'minProperties', 'maxProperties',
-  'required', 'properties', 'additionalProperties', 'patternProperties',
-  'items', 'prefixItems', 'contains',
-  'allOf', 'anyOf', 'oneOf', 'not',
-  '$ref', '$id', '$schema', '$comment',
-  'deprecated', 'readOnly', 'writeOnly',
-];
-
 /**
  * Resolve a local $ref pointer within the root schema.
  * Only supports internal `#/path/to/thing` refs.

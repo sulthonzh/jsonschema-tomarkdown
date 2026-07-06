@@ -99,7 +99,15 @@ console.log(md);
 
 Because schema files are for machines, not humans. Every team that uses JSON Schema needs this — API docs, config validation docs, form schemas, you name it.
 
-Zero dependencies. Works with Node 18+.
+### How it compares
+
+| Tool | Deps | CLI | Programmatic | $ref Support | Composition |
+|------|------|-----|-------------|-------------|------------|
+| **jsonschema-tomarkdown** | **0** | ✅ | ✅ | ✅ Local | ✅ allOf/anyOf/oneOf |
+| @adobe/jsonschema2md | 50+ | ✅ | ❌ | External only | Partial |
+| manual docs | — | ❌ | ❌ | — | — |
+
+Zero dependencies. Works with Node 18+. One file in, beautiful docs out.
 
 ## License
 
