@@ -7,7 +7,8 @@
     "jsonschema-tomd": "src/cli.js"
   },
   "scripts": {
-    "test": "node --test test/index.test.js"
+    "test": "node --test test/index.test.js",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "json-schema",
@@ -30,5 +31,8 @@
     "src/",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
+  }
 }

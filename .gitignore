@@ -3,3 +3,9 @@ dist/
 *.log
 .DS_Store
 coverage/
+build/
+.env
+__pycache__/
+.venv/
+*.egg-info/
+.mypy_cache/
